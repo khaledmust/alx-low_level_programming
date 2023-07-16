@@ -15,8 +15,8 @@ int main(void)
 		if (i < 57)
 		{
 			putchar(44);
+			putchar(' ');
 		}
-		putchar(' ');
 	}
 
 	return (0);
