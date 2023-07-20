@@ -17,7 +17,7 @@ int print_last_digit(int j)
 		i = j * -1;
 		i = i % 10;
 		_putchar(i + 48);
-		return (i);
+		return (-i);
 	}
 	else
 	{
