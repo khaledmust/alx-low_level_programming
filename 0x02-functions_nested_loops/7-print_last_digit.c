@@ -7,18 +7,21 @@
  *
  * Return: the value of the last digit.
  */
-int print_last_digit(int i)
+int print_last_digit(int j)
 {
-	if (i < 0)
+	int i;
+
+	i = 0;
+	if (j < 0)
 	{
-		i *= -1;
-		i %= 10;
+		i = j * -1;
+		i = i % 10;
 		_putchar(i + 48);
 		return (i);
 	}
 	else
 	{
-		i %= 10;
+		i = j % 10;
 		_putchar(i + 48);
 		return (i);
 	}
