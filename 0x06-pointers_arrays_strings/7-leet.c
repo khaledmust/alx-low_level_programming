@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * leet -  a function that encodes a string into 1337
+ *
+ * @s: Address of the string.
+ *
+ * Return: Address of the encoded string.
+ */
 char *leet(char *s)
 {
 	int i = 0, j;
