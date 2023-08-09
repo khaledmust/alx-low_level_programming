@@ -14,9 +14,16 @@ char *str_concat(char *s1, char *s2)
 	int i, j, k;
 	char *strout;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
+	}
+	else if (s1 == NULL || s2 == NULL)
+	{
+		if (s1 == NULL)
+			s1 = "";
+		else
+			s2 = "";
 	}
 
 	i = 0;
@@ -32,6 +39,9 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	strout = (char *)malloc(sizeof(char) * (i + j + 1));
+
+	if (strout == NULL)
+		return (NULL);
 
 	k = 0;
 
